@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>JS Final Project</title>
+</head>
+
+<body>
+    <div id="main-container">
+        <div id="heading-container">
+            <h1 id="main-heading">Login</h1>
+        </div>
+        <div id="sign-up-container" class="container">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <input type="submit" id="login" value="Login ➝">
+        </div>
+        <div id="weather-container" class="container">
+        </div>
+        <div id="today-info" class="container">
+            <p>Today's message: <span id="green-msg">"in init"</span></p>
+            <p id="date-container"></p>
+            <p id="time-container"></p>
+            <p id="error-msg"></p>
+        </div>
+
+    </div>
+    <script src="js/login.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+</body>
+
+</html>

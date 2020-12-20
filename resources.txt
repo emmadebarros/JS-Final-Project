@@ -1,0 +1,7 @@
+Here are the links I used as reference throughout the project : 
+
+Date Object JS : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+
+Non-navigating links JS : https://weblog.west-wind.com/posts/2019/Jan/21/NonNavigating-Links-for-JavaScript-Handling
+
+String Slice method JS : https://www.w3schools.com/jsref/jsref_slice_string.asp

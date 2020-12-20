@@ -1,0 +1,77 @@
+/* Basic Reset */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Lucida Console',
+        sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 1.6rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+}
+
+/* Main container */
+#main-container {
+    border: 1px solid lightgrey;
+    min-height: 30rem;
+    width: 40rem;
+}
+
+.container {
+    padding: .5rem 0 .5rem 1.5rem;
+}
+
+/* Heading */
+h1 {
+    color: rgb(99, 169, 193);
+}
+
+#heading-container {
+    position: relative;
+    bottom: 2rem;
+    left: 1rem;
+    text-align: center;
+    background-color: white;
+    display: inline-block;
+    width: 10rem;
+}
+
+/* Input container */
+input {
+    display: block;
+    margin: .5rem 0 1rem 0;
+    height: 2.5rem;
+}
+
+#login {
+    border: none;
+    height: 3rem;
+    font-size: large;
+    font-weight: 600;
+    padding: .5rem;
+}
+
+#error-msg {
+    font-size: 2.2rem;
+    color: red;
+}
+
+/* Info container */
+
+#green-msg {
+    color: rgb(16, 172, 16);
+}

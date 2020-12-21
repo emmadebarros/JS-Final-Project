@@ -1,6 +1,8 @@
-Here are the links I used as reference throughout the project : 
+Here are the links I used as reference throughout the making of the project : 
 
 Date Object JS : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date
+
+Real time clock : https://www.youtube.com/watch?v=C2CrBlGvbEM
 
 Non-navigating links JS : https://weblog.west-wind.com/posts/2019/Jan/21/NonNavigating-Links-for-JavaScript-Handling
 

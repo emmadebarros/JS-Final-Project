@@ -20,20 +20,43 @@ let date = today.getDate();
 /* Get year */
 let year = today.getFullYear();
 
-/* Get hours */
-let hours = today.getHours();
-/* Get minutes */
-let minutes = today.getMinutes();
-/* Get seconds */
-let seconds = today.getSeconds();
-
 /* Update today obj */
 today = `${day} ${month} ${date} ${year}`;
 
 /* Event listener */
 submitBtn.addEventListener("click", check);
 
+/* Text */
+dateContainer.textContent = `Today's date: ${today}`;
+
 /* Functions */
+
+function realTimeClock() {
+    let todayHour = new Date();
+
+    /* Get hours */
+    let hours = todayHour.getHours();
+    /* Get minutes */
+    let minutes = todayHour.getMinutes();
+    /* Get seconds */
+    let seconds = todayHour.getSeconds();
+
+    //Am and PM
+    var amPm = (hours < 12) ? "AM" : "PM";
+
+    //Convert to 12 hour format
+    hours = (hours > 12) ? hours - 12 : hours;
+
+    //Add 0's in front of numbers for consistent format
+    hours = ("0" + hours).slice(-2); //getting rid od 0 in front of 2 digit numbers
+    minutes = ("0" + minutes).slice(-2); //getting rid od 0 in front of 2 digit numbers
+    seconds = ("0" + seconds).slice(-2); //getting rid od 0 in front of 2 digit numbers
+
+
+    timeContainer.textContent = `Time now: ${hours}:${minutes}:${seconds} ${amPm}`;
+    let t = setTimeout(realTimeClock, 500);
+}
+
 function getWeekDay() {
     let weekday = new Array(7);
     weekday[0] = "Sun";
@@ -84,7 +107,9 @@ function weather(weatherData) {
         dateStyled.href = "#0";
         dateStyled.textContent = dateLink.slice(0, 10); // slice string to make date more readable
         /* Had to add initial color of blue and an event listener to change link color on click because, for some reason, the links would all appear purple from the start... */
-        dateStyled.addEventListener("click", function() {dateStyled.style.color = "purple";});
+        dateStyled.addEventListener("click", function () {
+            dateStyled.style.color = "purple";
+        });
         days.appendChild(dateStyled);
 
         /* Create max and min p */
@@ -103,11 +128,14 @@ function weather(weatherData) {
 }
 
 function check() {
+    if(weatherContainer.textContent != "") {
+        weatherContainer.textContent = "";
+    }
     errorMsg.textContent = "";
     const emailInputContent = emailInput.value;
     const passwordInputContent = passwordInput.value;
     if (emailInputContent == "admin@yopmail.com" && passwordInputContent == "adminyopmail") {
-        $.ajax("http://dataservice.accuweather.com/forecasts/v1/daily/5day/56186?apikey=0L9MOEYIDDJJNMNN8hOdr6nQuCANC2Aa&metric=true").done(weather);
+        $.ajax("http://dataservice.accuweather.com/forecasts/v1/daily/5day/56186?apikey=5gSsn49PUUYs8PcEJ4x4UGdRKYksFnxE&metric=true").done(weather);
 
     } else if (emailInputContent == "" && passwordInputContent == "") {
         errorMsg.textContent = "Error! Please complete the form!";
@@ -117,9 +145,3 @@ function check() {
         errorMsg.textContent = "* Password length must be at least 6 characters!";
     }
 }
-
-/*  */
-
-/* Write content */
-dateContainer.textContent = `Today's date: ${today}`;
-timeContainer.textContent = `Time now: ${hours}:${minutes}:${seconds} ${hours > 12 ? "PM" : "AM"}`;

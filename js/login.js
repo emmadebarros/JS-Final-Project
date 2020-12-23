@@ -42,15 +42,15 @@ function realTimeClock() {
     let seconds = todayHour.getSeconds();
 
     //Am and PM
-    var amPm = (hours < 12) ? "AM" : "PM";
+    let amPm = (hours < 12) ? "AM" : "PM";
 
     //Convert to 12 hour format
     hours = (hours > 12) ? hours - 12 : hours;
 
     //Add 0's in front of numbers for consistent format
-    hours = ("0" + hours).slice(-2); //getting rid od 0 in front of 2 digit numbers
-    minutes = ("0" + minutes).slice(-2); //getting rid od 0 in front of 2 digit numbers
-    seconds = ("0" + seconds).slice(-2); //getting rid od 0 in front of 2 digit numbers
+    hours = ("0" + hours).slice(-2); //getting rid of 0 in front of 2 digit numbers
+    minutes = ("0" + minutes).slice(-2); //getting rid of 0 in front of 2 digit numbers
+    seconds = ("0" + seconds).slice(-2); //getting rid of 0 in front of 2 digit numbers
 
 
     timeContainer.textContent = `Time now: ${hours}:${minutes}:${seconds} ${amPm}`;

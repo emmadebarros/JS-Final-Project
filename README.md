@@ -13,6 +13,9 @@ To experiment use:
 
 🔑 password: adminyopmail
 
+## API
+[AccuWeather API](https://developer.accuweather.com) 🔗
+
 
 ## Contributing
 Pull requests are welcome as I love improving my projects and learning 💞. For major changes, please open an issue first to discuss what you would like to change.

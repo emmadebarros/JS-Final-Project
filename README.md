@@ -11,9 +11,9 @@ GitHUb page available: https://emmadebarros.github.io/JS-Final-Project/ 🔗
 
 To experiment use:
 
-email: admin@yopmail.com 📧
+📧 email: admin@yopmail.com
 
-password: adminyopmail 🔑
+🔑 password: adminyopmail
 
 ## API
 [AccuWeather API](https://developer.accuweather.com) 🔗

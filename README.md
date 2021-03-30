@@ -7,6 +7,8 @@ This project highlighted and improved my knowledge of API's, AJAX calls and the 
 
 ## Usage
 
+GitHUb page available: https://emmadebarros.github.io/JS-Final-Project/ 🔗
+
 To experiment use:
 
 📧 email: admin@yopmail.com

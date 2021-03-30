@@ -7,3 +7,5 @@ Real time clock : https://www.youtube.com/watch?v=C2CrBlGvbEM
 Non-navigating links JS : https://weblog.west-wind.com/posts/2019/Jan/21/NonNavigating-Links-for-JavaScript-Handling
 
 String Slice method JS : https://www.w3schools.com/jsref/jsref_slice_string.asp
+
+***replaced with a readme on GitHub

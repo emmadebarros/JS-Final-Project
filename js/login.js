@@ -135,7 +135,7 @@ function check() {
     const emailInputContent = emailInput.value;
     const passwordInputContent = passwordInput.value;
     if (emailInputContent == "admin@yopmail.com" && passwordInputContent == "adminyopmail") {
-        $.ajax("http://dataservice.accuweather.com/forecasts/v1/daily/5day/56186?apikey=5gSsn49PUUYs8PcEJ4x4UGdRKYksFnxE&metric=true").done(weather);
+        $.ajax("https://dataservice.accuweather.com/forecasts/v1/daily/5day/56186?apikey=5gSsn49PUUYs8PcEJ4x4UGdRKYksFnxE&metric=true").done(weather);
 
     } else if (emailInputContent == "" && passwordInputContent == "") {
         errorMsg.textContent = "Error! Please complete the form!";

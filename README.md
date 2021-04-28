@@ -5,6 +5,11 @@ This final JS project was created for the purpose of my two week Javascript clas
 
 This project highlighted and improved my knowledge of API's, AJAX calls and the jQuery library 📚.
 
+## 🚧🛠 Construction 🚧🛠
+Currently trying to find a **free** solution to make my AccuWeather API call over HTTPS, as GitHub Pages doesn't handle HTTP requests. 
+
+Please feel free to contribute if you think you have a solution, thank you!
+
 ## Usage
 
 GitHub page available: https://emmadebarros.github.io/JS-Final-Project/ 🔗

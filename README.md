@@ -10,6 +10,8 @@ Currently trying to find a **free** solution to make my AccuWeather API call ove
 
 Please feel free to contribute if you think you have a solution, thank you!
 
+The API call is made with the help of the jQuery syntax in JS-Final-Project/js/login.js, line 138. I tried putting this address (https://cors-anywhere.herokuapp.com/) before the Accuweather address, as someone suggested on StackOverflow, but it is still not working correctly.
+
 ## Usage
 
 GitHub page available: https://emmadebarros.github.io/JS-Final-Project/ 🔗

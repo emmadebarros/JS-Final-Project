@@ -1,4 +1,4 @@
-# JavaScript-Final-Project
+# JavaScript Final Project
 # Description
 
 This final JS project was created for the purpose of my two week Javascript class final exam, with professor [Aakash Malhotra](https://www.linkedin.com/in/aakash-malhotra) 🔗.

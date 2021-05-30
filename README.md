@@ -18,7 +18,7 @@ I tried putting this address (https://cors-anywhere.herokuapp.com/) before the A
 
 **Temporary** : go to https://cors-anywhere.herokuapp.com and click on the button to get temporary access to the server. Then, go to the GitHub page available for my project and follow the instructions below ⬇️ 
 
-GitHub page available: https://emmadebarros.github.io/JS-Final-Project/ 🔗
+GitHub page available: https://emmadebarros.github.io/JavaScript-Final-Project/ 🔗
 
 To experiment use:
 
